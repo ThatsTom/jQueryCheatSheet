@@ -1,0 +1,45 @@
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .animated {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid;
+    padding: 10px;
+    animation: changeColor 5s infinite alternate, changeSize 5s infinite alternate;
+  }
+
+  @keyframes changeColor {
+    0% {
+      color: red;
+      border-color: red;
+    }
+    50% {
+      color: blue;
+      border-color: blue;
+    }
+    100% {
+      color: green;
+      border-color: green;
+    }
+  }
+
+  @keyframes changeSize {
+    0% {
+      font-size: 16px;
+    }
+    50% {
+      font-size: 24px;
+    }
+    100% {
+      font-size: 32px;
+    }
+  }
